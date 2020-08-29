@@ -64,59 +64,59 @@ export default () => {
                         <p className="pasa-paragraph">SHORT BAGGAGE EXTENSION</p>
                         <input className="pasa-textfield dark" id="input-shortBaggage" type="number" placeholder="kg"  autocomplete="off" onChange={event => setShB(event.target.value)}/>
                         <p className="pasa-paragraph result">DE-ICING FLUID @ 1m</p>
-                        <input className="pasa-textfield dark" id="result-deIcing" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.DeIcingFluid_Result ? Res.DeIcingFluid_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-deIcing" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.DeIcingFluid_Result ? (Res.DeIcingFluid_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">DE-ICING FLUID @ 4.52m</p>
-                        <input className="pasa-textfield dark" id="result-deIcing4" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.DeIcingFluid4_Result ? Res.DeIcingFluid4_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-deIcing4" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.DeIcingFluid4_Result ? (Res.DeIcingFluid4_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TOTAL EMPTY MASS</p>
-                        <input className="pasa-textfield dark" id="result-totalEmptyMass" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TotalEmptyMass_Result ? Res.TotalEmptyMass_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-totalEmptyMass" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TotalEmptyMass_Result ? (Res.TotalEmptyMass_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TAKEOFF FUEL (in Main Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-TOFuelMain" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TOFuelKgMain_Result ? Res.TOFuelKgMain_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-TOFuelMain" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TOFuelKgMain_Result ? (Res.TOFuelKgMain_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">LANDING FUEL (in Main Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-LdgFuelMain" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.LdgFuelKgMain_Result ? Res.LdgFuelKgMain_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-LdgFuelMain" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.LdgFuelKgMain_Result ? (Res.LdgFuelKgMain_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TAKEOFF FUEL (in Auxiliary Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-TOFuelAux" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TOFuelKgAux_Result ? Res.TOFuelKgAux_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-TOFuelAux" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TOFuelKgAux_Result ? (Res.TOFuelKgAux_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">LANDING FUEL (in Auxiliary Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-LdgFuelAux" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.LdgFuelKgAux_Result ? Res.LdgFuelKgAux_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-LdgFuelAux" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.LdgFuelKgAux_Result ? (Res.LdgFuelKgAux_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TOTAL TAKEOFF MASS</p>
-                        <input className="pasa-textfield dark" id="result-TotalMassTO" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TotalMassTO_Result ? Res.TotalMassTO_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-TotalMassTO" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TotalMassTO_Result ? (Res.TotalMassTO_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TOTAL LANDING MASS</p>
-                        <input className="pasa-textfield dark" id="result-TotalMassLdg" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TotalMassLdg_Result ? Res.TotalMassLdg_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-TotalMassLdg" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TotalMassLdg_Result ? (Res.TotalMassLdg_Result).toFixed(2) : null} disabled/>
                     </div>
                     <div class="col-lg-4 mr-auto pasa-column">
                         <p className="pasa-paragraph">EMPTY MOMENT</p>
                         <input className="pasa-textfield dark" id="result-emptyMoment" type="number" placeholder="kgm"  autocomplete="off" onChange={event => setEMo(event.target.value)}/>
                         <p className="pasa-paragraph result">FRONT SEATS MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-frontSeatsMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.FrontSeatsMoment_Result ? Res.FrontSeatsMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-frontSeatsMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.FrontSeatsMoment_Result ? (Res.FrontSeatsMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">REAR SEATS MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-rearSeatsMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.RearSeatsMoment_Result ? Res.RearSeatsMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-rearSeatsMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.RearSeatsMoment_Result ? (Res.RearSeatsMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">NOSE BAGGAGE MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-noseBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.NoseBaggageMoment_Result ? Res.NoseBaggageMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-noseBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.NoseBaggageMoment_Result ? (Res.NoseBaggageMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">CABIN BAGGAGE MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-cabinBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.CabinBaggageMoment_Result ? Res.CabinBaggageMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-cabinBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.CabinBaggageMoment_Result ? (Res.CabinBaggageMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">BAGGAGE EXTENSION MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-baggageExtensionMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.BaggageExtensionMoment_Result ? Res.BaggageExtensionMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-baggageExtensionMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.BaggageExtensionMoment_Result ? (Res.BaggageExtensionMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">STANDARD BAGGAGE MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-standardBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.StandardBaggageMoment_Result ? Res.StandardBaggageMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-standardBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.StandardBaggageMoment_Result ? (Res.StandardBaggageMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">SHORT BAGGAGE EXTENSION MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-shortBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.ShortBaggageMoment_Result ? Res.ShortBaggageMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-shortBaggageMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.ShortBaggageMoment_Result ? (Res.ShortBaggageMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">DE-ICING FLUID @ 1m MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-deIcingMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.DeIcingFluidMoment_Result ? Res.DeIcingFluidMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-deIcingMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.DeIcingFluidMoment_Result ? (Res.DeIcingFluidMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">DE-ICING FLUID @ 4.52m MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-deIcingMoment4" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.DeIcingFluid1Moment_Result ? Res.DeIcingFluid1Moment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-deIcingMoment4" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.DeIcingFluid1Moment_Result ? (Res.DeIcingFluid1Moment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TOTAL EMPTY MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-totalEmptyMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TotalMomentEmpty_Result ? Res.TotalMomentEmpty_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-totalEmptyMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TotalMomentEmpty_Result ? (Res.TotalMomentEmpty_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TAKEOFF FUEL MOMENT (Main Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-TOFuelMainMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TOMainTanksMoment_Result ? Res.TOMainTanksMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-TOFuelMainMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TOMainTanksMoment_Result ? (Res.TOMainTanksMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">LANDING FUEL MOMENT (Main Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-LdgFuelMainMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.LdgMainTanksMoment_Result ? Res.LdgMainTanksMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-LdgFuelMainMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.LdgMainTanksMoment_Result ? (Res.LdgMainTanksMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TAKEOFF FUEL MOMENT (Auxiliary Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-TOFuelAuxMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TOAuxTanksMoment_Result ? Res.TOAuxTanksMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-TOFuelAuxMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TOAuxTanksMoment_Result ? (Res.TOAuxTanksMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">LANDING FUEL MOMENT (Auxiliary Tanks)</p>
-                        <input className="pasa-textfield dark" id="result-LdgFuelAuxMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.LdgAuxTanksMoment_Result ? Res.LdgAuxTanksMoment_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-LdgFuelAuxMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.LdgAuxTanksMoment_Result ? (Res.LdgAuxTanksMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TOTAL TAKEOFF MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-totalMassTOMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TotalMomentTO_Result ? Res.TotalMomentTO_Result : null} disabled/>
+                        <input className="pasa-textfield dark" id="result-totalMassTOMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TotalMomentTO_Result ? (Res.TotalMomentTO_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">TOTAL LANDING MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-totalMassLdgMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TotalMomentLdg_Result ? Res.TotalMomentLdg_Result : null} disabled></input>
+                        <input className="pasa-textfield dark" id="result-totalMassLdgMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TotalMomentLdg_Result ? (Res.TotalMomentLdg_Result).toFixed(2) : null} disabled></input>
                     </div>
                 </div>
 

@@ -183,7 +183,7 @@ export function calculateMB(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1
             TOFuelKgAux_Result: TOFuelKgAux,
             LdgFuelKgAux_Result: LdgFuelKgAux,
             TotalMassTO_Result: TotalMassTO,
-            TotalMassLdg_Result: parseFloat(TotalMassLdg),
+            TotalMassLdg_Result: TotalMassLdg,
             EmptyMoment_Result: EmptyMoment,
             FrontSeatsMoment_Result: FrontSeatsMoment,
             RearSeatsMoment_Result: RearSeatsMoment,
