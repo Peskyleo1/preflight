@@ -125,8 +125,9 @@ export default () => {
                         <input className="pasa-textfield dark" id="result-totalMassLdgMoment" type="number" placeholder="RESULT: kgm"  autocomplete="off" value={Res.TotalMomentLdg_Result ? (Res.TotalMomentLdg_Result).toFixed(2) : null} disabled></input>
                     </div>
                 </div>
-
-                
+                <br></br><br></br><br></br><br></br>
+                <p className="pasa-paragraph result">KG OF FUEL TRANSFERRED FROM AUXILIARY TO MAIN TANKS</p>
+                <input className="pasa-textfield dark" id="result-transferredFuel" type="number" placeholder="RESULT: kg"  autocomplete="off" value={Res.TransferredFuel_Result ? (Res.TransferredFuel_Result).toFixed(2) : null} disabled></input>
                 <button className="pasa-button primary" onClick={event => setRES(calculateMB(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1, D4, TOLM, TOLA))}>CALCULATE</button>
                 
                 

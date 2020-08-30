@@ -79,20 +79,23 @@ export function calculateMB(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1
     let TransferredFuel;
     NavigationConsumption = FlightHours * AvgConsumption;
     //Main tanks 94.5
-    if (NavigationConsumption > 30 && NavigationConsumption <= 60 ){
+    if (NavigationConsumption > 30 && NavigationConsumption <= 60 && TOLitersAux > 37.8){
         //move 5 gallons from aux to main
         console.log("Moved 10 Gallons (30kg): Aux Tanks => Main Tanks");
         TransferredFuel = (5 * 3.78 * FuelTypeSpecificWeight * 2);
     }
-    if (NavigationConsumption > 60 && NavigationConsumption <= 90) {
+    else if (NavigationConsumption > 60 && NavigationConsumption <= 90 && TOLitersAux > 75.6) {
         //Move 10 gallons
         console.log("Moved 20 Gallons (60kg): Aux Tanks => Main Tanks");
         TransferredFuel = (10 * 3.78 * FuelTypeSpecificWeight * 2);
     }
-    if (NavigationConsumption > 90){
+    else if (NavigationConsumption > 90 && TOLitersAux > 99.792){
         //Move 13,2 gallons
         console.log("Moved 26.4 Gallons (80kg): Aux Tanks => Main Tanks");
         TransferredFuel = (13.2 * 3.78 * FuelTypeSpecificWeight * 2);
+    }
+    else{
+        TransferredFuel = 0;
     }
     console.log("********** Fuel Transfer Completed **********");
 
@@ -171,6 +174,7 @@ export function calculateMB(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1
     TotalMassLdg = TotalMassEmpty + LdgFuelKgMain + LdgFuelKgAux;
     TotalMomentLdg = TotalMomentEmpty + LdgMainTanksMoment + LdgAuxTanksMoment;
     console.log("Total Mass Landing: " + TotalMassLdg + " | " + TotalMomentLdg);
+    
     console.log(" ********** END **********");
 
     return {
@@ -200,7 +204,8 @@ export function calculateMB(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1
             TOAuxTanksMoment_Result: TOAuxTanksMoment,
             LdgAuxTanksMoment_Result: LdgAuxTanksMoment,
             TotalMomentTO_Result: TotalMomentTO,
-            TotalMomentLdg_Result: TotalMomentLdg
+            TotalMomentLdg_Result: TotalMomentLdg,
+            TransferredFuel_Result: TransferredFuel
         
 
     }
