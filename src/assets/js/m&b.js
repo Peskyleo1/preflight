@@ -10,7 +10,7 @@ export function calculateMB(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1
     let FlightHours = parseFloat(FH);
     let AvgConsumption = parseFloat(FF); // L/h
 
-    let FuelTypeSpecificWeight = JetA1SpecificWeight;
+    let FuelTypeSpecificWeight = parseFloat(FT);
 
     let EmptyMass = parseFloat(EM);  // kg
     let EmptyMoment = parseFloat(EMo);  // kg*m

@@ -32,6 +32,12 @@ export default () => {
                 </div>
                 <p className="pre-wrap masthead-subheading font-weight-light mb-0">DA42</p>
         
+                <p className="pasa-paragraph">FUEL TYPE</p>
+                <select required className="pasa-form-control dark" onChange={event => setFT(event.target.value)}>
+                    <option className="pasa-option dark" value="" disabled selected hidden>SELECT</option>
+                    <option className="pasa-option dark" value="0.8">Jet A1</option>
+                    <option className="pasa-option dark" value="0.84">Diesel</option>
+                </select>
                 <p className="pasa-paragraph">FLIGHT HOURS</p>
                 <input className="pasa-textfield dark" id="input-flightHours" type="number" placeholder="Decimal Time"  autocomplete="off" onChange={event => setFH(event.target.value)}/>
                 <p className="pasa-paragraph">AVERAGE CONSUMPTION</p>
@@ -44,7 +50,7 @@ export default () => {
                 <input className="pasa-textfield dark" id="input-DeIcing" type="number" placeholder="Litres"  autocomplete="off" onChange={event => setD1(event.target.value)}/>
                 <p className="pasa-paragraph">DE-ICING FLUID @ 4.52m</p>
                 <input className="pasa-textfield dark" id="input-DeIcing4" type="number" placeholder="Litres"  autocomplete="off" onChange={event => setD4(event.target.value)}/>
-                <br></br><br></br>
+                
                 <div class="row pasa-row">
                     <div class="col-lg-4 ml-auto pasa-column">
                         <p className="pasa-paragraph">EMPTY MASS</p>
