@@ -39,42 +39,42 @@ export default () => {
                 <p className="pre-wrap masthead-subheading font-weight-light mb-0">DA42</p>
         
                 <p className="pasa-paragraph">FUEL TYPE</p>
-                <select required className="pasa-form-control dark" onChange={event => setFT(event.target.value.replace(",",".")), replaceValue}>
+                <select required className="pasa-form-control dark" onChange={event => setFT(event.target.value.replace(",","."))}>
                     <option className="pasa-option dark" value="" disabled selected hidden>SELECT</option>
                     <option className="pasa-option dark" value="0.8">Jet A1</option>
                     <option className="pasa-option dark" value="0.84">Diesel</option>
                 </select>
                 <p className="pasa-paragraph">FLIGHT HOURS</p>
-                <input className="pasa-textfield dark" id="input-flightHours" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Decimal Time"  autocomplete="off" onChange={event => setFH(event.target.value.replace(",",".")), replaceValue}/>
+                <input className="pasa-textfield dark" id="input-flightHours" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Decimal Time"  autocomplete="off" onChange={event => setFH(event.target.value.replace(",","."))}/>
                 <p className="pasa-paragraph">AVERAGE CONSUMPTION</p>
-                <input className="pasa-textfield dark" id="input-consumption" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres per Hour"  autocomplete="off" onChange={event => setFF(event.target.value.replace(",",".")), replaceValue}/>
+                <input className="pasa-textfield dark" id="input-consumption" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres per Hour"  autocomplete="off" onChange={event => setFF(event.target.value.replace(",","."))}/>
                 <p className="pasa-paragraph">TAKEOFF FUEL (Main Tanks)</p>
-                <input className="pasa-textfield dark" id="input-TOFuelMain" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setTOLM(event.target.value.replace(",",".")), replaceValue}/>
+                <input className="pasa-textfield dark" id="input-TOFuelMain" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setTOLM(event.target.value.replace(",","."))}/>
                 <p className="pasa-paragraph">TAKEOFF FUEL (Auxiliary Tanks)</p>
-                <input className="pasa-textfield dark" id="input-TOFuelAux" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setTOLA(event.target.value.replace(",",".")), replaceValue}/>
+                <input className="pasa-textfield dark" id="input-TOFuelAux" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setTOLA(event.target.value.replace(",","."))}/>
                 <p className="pasa-paragraph">DE-ICING FLUID @ 1m</p>
-                <input className="pasa-textfield dark" id="input-DeIcing" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setD1(event.target.value.replace(",",".")), replaceValue}/>
+                <input className="pasa-textfield dark" id="input-DeIcing" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setD1(event.target.value.replace(",","."))}/>
                 <p className="pasa-paragraph">DE-ICING FLUID @ 4.52m</p>
-                <input className="pasa-textfield dark" id="input-DeIcing4" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setD4(event.target.value.replace(",",".")), replaceValue}/>
+                <input className="pasa-textfield dark" id="input-DeIcing4" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Litres"  autocomplete="off" onChange={event => setD4(event.target.value.replace(",","."))}/>
                 
                 <div class="row pasa-row">
                     <div class="col-lg-4 ml-auto pasa-column">
                         <p className="pasa-paragraph">EMPTY MASS</p>
-                        <input className="pasa-textfield dark" id="input-emptyMass" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setEM(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-emptyMass" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setEM(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph">FRONT SEATS</p>
-                        <input className="pasa-textfield dark" id="input-frontSeats" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setFS(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-frontSeats" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setFS(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph">REAR SEATS</p>
-                        <input className="pasa-textfield dark" id="input-rearSeats" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setRS(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-rearSeats" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setRS(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph">NOSE BAGGAGE</p>
-                        <input className="pasa-textfield dark" id="input-noseBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setNB(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-noseBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setNB(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph">CABIN BAGGAGE</p>
-                        <input className="pasa-textfield dark" id="input-cabinBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setCB(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-cabinBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setCB(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph">BAGGAGE EXTENSION</p>
-                        <input className="pasa-textfield dark" id="input-baggageExtension" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setBE(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-baggageExtension" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setBE(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph">STANDARD BAGGAGE</p>
-                        <input className="pasa-textfield dark" id="input-standardBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setSB(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-standardBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setSB(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph">SHORT BAGGAGE EXTENSION</p>
-                        <input className="pasa-textfield dark" id="input-shortBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setShB(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="input-shortBaggage" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kg"  autocomplete="off" onChange={event => setShB(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph result">DE-ICING FLUID @ 1m</p>
                         <input className="pasa-textfield dark" id="result-deIcing" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="RESULT: kg"  autocomplete="off" value={Res.DeIcingFluid_Result ? (Res.DeIcingFluid_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">DE-ICING FLUID @ 4.52m</p>
@@ -96,7 +96,7 @@ export default () => {
                     </div>
                     <div class="col-lg-4 mr-auto pasa-column">
                         <p className="pasa-paragraph">EMPTY MOMENT</p>
-                        <input className="pasa-textfield dark" id="result-emptyMoment" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kgm"  autocomplete="off" onChange={event => setEMo(event.target.value.replace(",",".")), replaceValue}/>
+                        <input className="pasa-textfield dark" id="result-emptyMoment" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="kgm"  autocomplete="off" onChange={event => setEMo(event.target.value.replace(",","."))}/>
                         <p className="pasa-paragraph result">FRONT SEATS MOMENT</p>
                         <input className="pasa-textfield dark" id="result-frontSeatsMoment" type="text" inputmode="decimal" pattern="[0-9]+([\.,][0-9]+)?" placeholder="RESULT: kgm"  autocomplete="off" value={Res.FrontSeatsMoment_Result ? (Res.FrontSeatsMoment_Result).toFixed(2) : null} disabled/>
                         <p className="pasa-paragraph result">REAR SEATS MOMENT</p>

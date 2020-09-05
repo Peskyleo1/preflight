@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 export function calculateMB(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1, D4, TOLM, TOLA){
     const DieselSpecificWeight = 0.84; // kg/L
     const JetA1SpecificWeight = 0.8; // kg/L
-
+    console.log(FH, FF, FT, EM, EMo, FS, RS, NB, CB, BE, SB, ShB, D1, D4, TOLM, TOLA);
     //User changeable Parameters
     let FlightHours = parseFloat(FH);
     let AvgConsumption = parseFloat(FF); // L/h
